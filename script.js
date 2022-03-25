@@ -1,19 +1,26 @@
-const page = (
-    <div>
-        <img src="./logo.png" width="200px"></img>
-        <h1>Fun facts about React:</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-)
+function Page() {
+    return (
+        <div>
+            <header>
+                <nav>
+                    <img src="./logo.png" width="200px"></img>
+                </nav>
+            </header>
+            <h1>Reasons I'm excited to learn React.js</h1>
+            <ol>
+                <li>Advancing WebDev knowledge</li>
+                <li>Career progression</li>
+                <li>Learning is fun</li>
+            </ol>
+            <footer>
+                <small>© 2022 Jethro's Web. All rights reserved.</small>
+            </footer>
+        </div>
+    )
+}
 
 ReactDOM.render(
-    page,
+    <Page />,
     document.getElementById("root")
 )
 
@@ -38,4 +45,33 @@ A: It means we use code to say what we want, rather than using code to say how t
 
 5. What does it mean for something to be "composable"?
 A: Using smaller pieces to make something larger. 
+
+6. Wgat is a React component? 
+A: A function that returns React elements. 
+
+7. What's wrong with this code? 
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+``` 
+A: Function name needs to be written in PascalCase (i.e., MyComponent()). 
+
+8. What's wrong with this code? 
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+A: Instead of calling the React function, you need to call it as a HTML element (i.e., <Header />)
 */
