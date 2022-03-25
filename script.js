@@ -1,20 +1,45 @@
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./logo.png" className="logo"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <small>© 2022 Jethro's Web. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
+    return (
+        <div>
+            <h1 className="title">Reasons I'm excited to learn React.js</h1>
+            <ol>
+                <li>Advancing WebDev knowledge.</li>
+                <li>Career progression.</li>
+                <li>Learning is fun!</li>
+            </ol>
+        </div>
+    )
+}
+
 function Page() {
     return (
         <div>
-            <header>
-                <nav>
-                    <img src="./logo.png" width="200px"></img>
-                </nav>
-            </header>
-            <h1>Reasons I'm excited to learn React.js</h1>
-            <ol>
-                <li>Advancing WebDev knowledge</li>
-                <li>Career progression</li>
-                <li>Learning is fun</li>
-            </ol>
-            <footer>
-                <small>© 2022 Jethro's Web. All rights reserved.</small>
-            </footer>
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }
