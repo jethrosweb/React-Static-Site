@@ -34,7 +34,7 @@ function MainContent() {
     )
 }
 
-function Page() {
+function App() {
     return (
         <div>
             <Header />
@@ -45,7 +45,7 @@ function Page() {
 }
 
 ReactDOM.render(
-    <Page />,
+    <App />,
     document.getElementById("root")
 )
 
